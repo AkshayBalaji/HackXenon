@@ -1,0 +1,43 @@
+/**
+ * Created by Akshay on 5/16/2015.
+ */
+public class Block {
+    private String type; // A or B
+    private String dayOfWeek;
+    private String date; // in the form "month" date
+
+    public Block(String stype, String sday, String sdate){
+        type = stype;
+        dayOfWeek = sday;
+        date = sdate;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getDayOfWeek() {
+        return dayOfWeek;
+    }
+
+    public void setDayOfWeek(String dayOfWeek) {
+        this.dayOfWeek = dayOfWeek;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String toString() {
+        return dayOfWeek + " "+ type + " (" + date + ")";
+    }
+}
+
